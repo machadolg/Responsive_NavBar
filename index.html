@@ -8,7 +8,7 @@
     <title>Basic - Responsiviness</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <a href="" id="logo">
             <img src="" alt="logo da página">
         </a>
@@ -29,7 +29,7 @@
     </header>
 
 <section>
-    <img src="/media/19197013.jpg" alt="Imagem desenvolvedor">
+    <img src="/media/19197013.jpg" alt="Imagem desenvolvedor" id="centerimage">
     <a href="http://www.freepik.com" id="freepik">Designed by vectorjuice / Freepik</a>
 
 </section>
@@ -38,5 +38,26 @@
         <p>Luiz Ribeiro</p>
     </footer>
 
+
+    <script>
+        const btnMobile = document.getElementById('btn-mobile');
+
+        function toggleMenu(event){
+            if (event.type === 'touchstart') event.preventDefault();
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+            const active = nav.classList.contains('active');
+            event.currentTarget.setAtribute('aria-expanded', active);
+            if (active) {
+                event.currentTarget.setAtribute('aria-label', 'Fechar menu')
+            } else {
+                event.currentTarget.setAtribute('aria-label', 'Abrir menu')
+            }
+        }
+
+            btnMobile.addEventListener('click',toggleMenu);
+            btnMobile.addEventListener('touchstart',toggleMenu);
+    </script>
 </body>
+
 </html>
