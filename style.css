@@ -4,12 +4,16 @@
 }
 
 body {
-    background: white;
+    background: #ffffff;
 }
 #logo{
     font-size: 1.5rem;
     font-weight: bold;
     font-family: sans-serif;
+}
+
+#logotipo{
+    height: 40px;
 }
 
 #header {
@@ -19,19 +23,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgb(86, 84, 84);
+    background: #e4e4e4;
 }
 
 #menu{
     display: flex;
     list-style: none;
     gap: .5rem;
-    color: white;
+    color: 575757;
 }
 
 #menu a {
     display: block;
     padding: .5rem;
+    text-decoration: none;
+    color: #575757;
 }
 
 #btn-mobile {
@@ -75,7 +81,7 @@ body {
          border: none;
          cursor: pointer;
          gap: .5rem;
-         color: white;
+         color: #F2C641;
      }
      #hamburguer {
          display: block;
@@ -108,23 +114,43 @@ body {
      } 
 }
 
-#centerimage{
+#centerimage, #freepik{
     width: 400px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
+    text-decoration: none;
+    color: lightgray;
    
 }
 
 footer {
     width: 100vw;
-    height: 30px;
+    height: 200px;
     position: absolute;
     bottom: 0;
-    background: rgb(86, 84, 84);
-    color: white;
-    text-align: center;
+    background: #e4e4e4;
+    color: #575757;
     
+
 }
 
+#links{
+    margin-top: 10px;
+    margin-left: 50vw;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  
+}
+
+#links a{
+    text-decoration: none;
+    color: white;
+}
+
+#links  :hover{
+    color: #F2C641;
+}
